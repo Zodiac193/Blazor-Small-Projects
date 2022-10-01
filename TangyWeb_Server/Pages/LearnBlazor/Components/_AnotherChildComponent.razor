@@ -1,0 +1,8 @@
+﻿<div>
+    <h3 class="text-primary pt-3">AnotherChildComponent</h3>
+    <input id="nametemp" placeholder="Initial Text" @attributes="InputAttributes" />
+</div>
+@code {
+    [Parameter(CaptureUnmatchedValues =true)]
+    public Dictionary<string, object> InputAttributes { get; set; } = new Dictionary<string, object>{};
+}
